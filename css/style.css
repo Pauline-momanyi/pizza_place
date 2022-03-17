@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    background-image: url("./../images/mainbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.start{
+    font-size: xx-small;
+    color: rgb(134, 130, 117);
+}
+.main{
+    
+}
+.pizzaimg{
+    width: 60vw;
+    margin: auto;
+    text-align: center;
+}
+.pizzaimg img{
+    background-size: cover;
+}
