@@ -5,7 +5,7 @@ body{
     
 }
 .container{
-    background-image: url("./../images/mainbg.jpg");
+    background-image: url("./../images/flour4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -52,10 +52,18 @@ body{
     float: left;
     width: 40%;
     margin-top: 20px;
+    border-radius: 100%;
 }
 .lists{
     display: flex;
     justify-content: center;
     /* float: right; */
+}
+.pizza1{
+    background: none;
+}
+.pizzas{
+    width: 15vw;
+    margin-right: 3rem;
 }
 
