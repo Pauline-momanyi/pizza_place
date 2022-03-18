@@ -28,6 +28,7 @@ body{
 .pizzaimg{
     width: 50vw;
     height: 30vh;
+    border: 2px solid white;
     /* background-size: ; */
 }
 .pizzamsg{
@@ -77,5 +78,19 @@ body{
 .nav-item{
     padding: 5px;
 }
+.order-online{
+    padding: 5px;
+    background-color: rgb(96, 97, 26);
+    border: 2px solid white;
+    border-radius: 30%;
+}
+.selection{
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 
