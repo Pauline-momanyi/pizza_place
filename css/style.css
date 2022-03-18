@@ -90,7 +90,11 @@ body{
     display: flex;
     justify-content: space-around;
 }
-
+.btnorder{
+    margin-top: 5px;
+    background: rgb(96, 97, 26) !important;
+    color: white !important;
+}
 
 
 
