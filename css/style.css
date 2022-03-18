@@ -62,8 +62,20 @@ body{
 .pizza1{
     background: none;
 }
+.order{
+    display: flex;
+    justify-content: center;
+}
 .pizzas{
     width: 15vw;
     margin-right: 3rem;
 }
+.navlink{
+    text-decoration: none;
+    color: white;
+}
+.nav-item{
+    padding: 5px;
+}
+
 
