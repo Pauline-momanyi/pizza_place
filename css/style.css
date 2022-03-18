@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Merienda', cursive !important;
     
 }
 .container{
@@ -27,16 +28,15 @@ body{
 }
 .pizzaimg{
     width: 50vw;
-    height: 30vh;
+    height: 40vh;
     border: 2px solid white;
-    /* background-size: ; */
 }
 .pizzamsg{
     position: absolute;
     left: 0;
     background-color: rgba(36, 35, 35, 0.6);
     top: 0;
-    height: 30vh;
+    height: 40vh;
 }
 .sec2{
     width: 60vw;
@@ -44,17 +44,21 @@ body{
     
 }
 .ourpizza{
-    width: 70vw;
+    width: 80vw;
     margin: auto;
-    /* margin-right: 20px; */
-    /* margin-left: 30px; */
+    display: flex;
+    /* flex-direction: row; */
+    height: 40vh;
 }
 .ourpizzaimg{
-    float: left;
-    width: 40%;
-    margin-top: 20px;
+    object-fit: fit !important;
+    width: 200px;
     border-radius: 100%;
 }
+/* .tagline{
+    font-family: 'Great Vibes', cursive;
+    font-size: large;
+} */
 .lists{
     display: flex;
     justify-content: center;
@@ -85,7 +89,7 @@ body{
     border-radius: 30%;
 }
 .selection{
-    width: 50vw;
+    width: 70vw;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -125,10 +129,12 @@ footer{
     justify-content: center;
     padding-top: 10px;
     margin-top: 5px;
+    font-family: 'Paprika', cursive !important;
 }
 /* form */
 form h4{
     color: black;
+    font-family: 'Paprika', cursive !important;
 }
 input, textarea{
     border: 1px solid black !important;
@@ -148,10 +154,25 @@ div.inputs{
     padding-bottom: 25px;     
 }
 
-/* ::placeholder{
-    color: white;
-    opacity: 1;
-} */
+table{
+    margin-top: 20px !important;
+    width: 60% !important;
+    margin: auto;
+    justify-content: center;
+    color: white !important;
+}
 
+@media (maxwidth:480px) {
+    .ourpizza{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .ourpizza{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
