@@ -16,12 +16,13 @@
         <nav class="navbar navbar-expand-sm justify-content-center">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="#" class="navlink">Home</a></li>
-                <li class="nav-item"><a href="#" class="navlink">Our Pizza</a></li>
-                <li class="nav-item"><a href="#" class="navlink order-online">Order Online</a></li>
-                <li class="nav-item"><a href="#" class="navlink">Contact Us</a></li>
+                <li class="nav-item"><a href="#ourpizza" class="navlink">Our Pizza</a></li>
+                <li class="nav-item"><a href="#orderonline" class="navlink order-online">Order Online</a></li>
+                <li class="nav-item"><a href="tel:+254700110011" class="navlink">Call to Order</a></li>
+                <li class="nav-item"><a href="#contactus" class="navlink">Contact Us</a></li>
             </ul>
         </nav>
-        <h4 class="main">PIZZA HOUSE</h4>
+        <h4 class="main">DOMNAZ PIZZA</h4>
         <div class="pizzaimgmsg">
             <img src="./images/pizzaimg.jpg" alt="pizzaimg" class="pizzaimg">
             <div class="pizzamsg">
@@ -29,13 +30,7 @@
                 <p>Best Pizza in town</p>
             </div>
         </div>
-        <!-- <div class="sec2">
-            <h3>Welcome to Pizza house</h3>
-            <h5>Lorem ipsum dolor sit amet consectetur.</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquam nulla porro omnis officia eligendi temporibus accusamus distinctio eveniet dolorem?</p>
-            <button class="btn btn-primary">More</button>
-        </div> -->
-        <div class="ourpizza">
+        <div class="ourpizza" id="ourpizza">
             <h3>Our Pizza</h3>
             <img src="./images/ourpizza.jpg" alt="" class="ourpizzaimg">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, soluta!</p>
@@ -57,13 +52,8 @@
             <button class="btn btn-primary">More</button>
         </div>
 
-        <h3>Order Online</h3>
+        <h3 id="orderonline">Order Online</h3>
         <div class="order">
-           
-            <!-- <figure class="figure pepperoni">
-                <img src="./images/pepperoni.png" alt="" class="figure-image pizzas">
-                <figcaption class="figure-caption text-center">pepperoni</figcaption>
-            </figure>  -->
             <div class="pepperoni">
                 <img src="./images/pepperoni.png" alt="" class="pizzas">
                 <h5>Pepperoni</h5>
@@ -103,8 +93,33 @@
                     
         </div>
         <button class="btn btnorder">Order Now</button>  
+
+        <footer class="contact" id="contactus">
+            <div class="contdetails">
+                <h2>Contact Details</h2>
+                <p>Address: Rainbow Road, 00100 Nairobi</p>
+                <p>Telephone: <a href="tel:+254700110011">+254700110011</a></p>
+                <p>Email: <a href="mailto:domnazpizza@gmail.com">domnazpizza@gmail.com</a> </p>
+            </div>
+            <form action="https://formspree.io/f/xknyzwva" method="post" id="myForm">
+                <h4>Leave a message</h4>
+                <div class="inputs textin">
+                    <input type="text" id="name" placeholder="Name..." name="Name">
+                    <input type="email" id="email" placeholder="Email..." name="Email">
+                </div>
+                <div class="textin">
+                    <textarea id="text" cols="10" rows="8" id="message" placeholder="Your message here..." name="Message"></textarea>
+                </div>
+                <div class="sbmtbtn">
+                    <button id="submitbtn" type="submit">SUBMIT</button>
+                </div>
+                
+        </footer>
+        <p>&copy;2022</p>
        
     </div>
+
+    
 
 
 
