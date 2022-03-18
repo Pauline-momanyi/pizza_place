@@ -67,32 +67,35 @@
                 <h5>Mushroom</h5>
             </div>  
         </div>
-        <div class="selection">
-            <div class="select1">
-                Size:<select name="size" id="size">
-                    <option value="1">small</option>
-                    <option selected value="2">medium</option>
-                    <option value="3">large</option>
-                </select>
-            </div>
-            <div class="select2">
-                Toppings<select name="topping" id="topping">
-                    <option selected value="1">pepperoni</option>
-                    <option value="2">cheese</option>
-                    <option value="3">mushroom</option>
-                </select>
-            </div>
-            <div class="select3">
-                Crust:<select name="crust" id="crust">
-                    <option value="1">crispy-thin</option>
-                    <option selected value="2">extreme-cheese</option>
-                    <option value="3">stuffed</option>
-                </select>
-            </div>  
+        <form action="">
+            <div class="selection">
+                <div class="select1">
+                    Size:<select name="size" id="size" class="form-select ">
+                        <option value="1">small</option>
+                        <option value="2">medium</option>
+                        <option value="3">large</option>
+                    </select>
+                </div>
+                <div class="select2">
+                    Toppings<select name="topping" id="topping" class="form-select ">
+                        <option value="4">pepperoni</option>
+                        <option value="5">cheese</option>
+                        <option value="6">mushroom</option>
+                    </select>
+                </div>
+                <div class="select3">
+                    Crust:<select name="crust" id="crust" class="form-select ">
+                        <option value="7">crispy-thin</option>
+                        <option value="8">extreme-cheese</option>
+                        <option value="9">stuffed</option>
+                    </select>
+                </div> 
+        </form>
+         
                
                     
         </div>
-        <button class="btn btnorder" type="submit">Order Now</button>  
+        <button class="btn btnorder" type="submit" id="ordernow">Order Now</button>  
 
         <footer class="contact" id="contactus">
             <div class="contdetails">
