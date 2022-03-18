@@ -37,6 +37,7 @@ body{
     background-color: rgba(36, 35, 35, 0.6);
     top: 0;
     height: 40vh;
+    width: 20vw;
 }
 .sec2{
     width: 60vw;
@@ -44,16 +45,14 @@ body{
     
 }
 .ourpizza{
-    width: 80vw;
+    width: 60vw;
     margin: auto;
     display: flex;
-    /* flex-direction: row; */
-    height: 40vh;
+    justify-content: space-around;
 }
 .ourpizzaimg{
-    object-fit: fit !important;
     width: 200px;
-    border-radius: 100%;
+    border-radius: 80%;
 }
 /* .tagline{
     font-family: 'Great Vibes', cursive;
@@ -68,6 +67,7 @@ body{
     background: none;
 }
 .order{
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
@@ -76,7 +76,7 @@ body{
     margin-right: 3rem;
 }
 .navlink{
-    text-decoration: none;
+    /* text-decoration: none; */
     color: white;
 }
 .nav-item{
@@ -87,6 +87,10 @@ body{
     background-color: rgb(96, 97, 26);
     border: 2px solid white;
     border-radius: 30%;
+}
+#orderonline{
+    text-decoration: underline!important;
+    color: rgb(189, 192, 24);
 }
 .selection{
     width: 70vw;
@@ -162,16 +166,33 @@ table{
     color: white !important;
 }
 
-@media (maxwidth:480px) {
-    .ourpizza{
-        flex-direction: row;
-    }
+.fa{
+    color: rgb(96, 97, 26);
+    margin: 10px;
 }
 
 @media only screen and (max-width: 767px){
     .ourpizza{
         display: flex;
         flex-direction: column;
+    }
+    .selection{
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        margin-top: 15px;
+    }
+    .pizzamsg{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 424px){
+    #size, #topping, #crust{
+        font-size: smaller;
     }
 }
 
