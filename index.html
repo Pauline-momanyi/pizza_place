@@ -23,7 +23,7 @@
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="#" class="navlink">Home</a></li>
                 <li class="nav-item"><a href="#ourpizza" class="navlink">Our Pizza</a></li>
-                <li class="nav-item"><a href="#orderonline" class="navlink order-online">Order Online</a></li>
+                <li class="nav-item"><a href="#orderon" class="navlink order-online">Order Online</a></li>
                 <li class="nav-item"><a href="tel:+254700110011" class="navlink">Call to Order</a></li>
                 <li class="nav-item"><a href="#contactus" class="navlink">Contact Us</a></li>
             </ul>
@@ -62,9 +62,10 @@
             
             
         </div>
-        <hr>
+       
         
-        <div>
+        <div id="orderon">
+            <hr>
             <h3 id="orderonline">Make Order</h3>            
         
             <form action="">
@@ -114,19 +115,47 @@
         </div> 
         <hr>
         <h4><em>Top Sales</em></h4>   
-        <div class="order">
-            <div class="pepperoni">
-                <img src="./images/pepperoni.png" alt="" class="pizzas">
-                <h5>Pepperoni</h5>
+        <div id="carControl" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="order">
+                    <div class="pepperoni">
+                        <img src="./images/pepperoni.png" alt="" class="pizzas">
+                        <h5 class="ph">Pepperoni</h5>
+                    </div>
+                    <div class="cheese">
+                        <img src="./images/cheese.png" alt="" class="pizzas">
+                        <h5 class="ph">Cheese</h5>
+                    </div> 
+                    <div class="mushroom">
+                        <img src="./images/mushroom.png" alt="" class="pizzas">
+                        <h5 class="ph">Mushroom</h5>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="order">
+                    <div class="pizza5">
+                        <img src="./images/pizza5.png" alt="" class="pizzas">
+                        <h5 class="ph">CheeseSlice</h5>
+                    </div>  
+                    <div class="pizza6">
+                        <img src="./images/pizza6.png" alt="" class="pizzas">
+                        <h5 class="ph">TikkaSlice</h5>
+                    </div>  
+                    <div class="pizza7">
+                        <img src="./images/pizza7.png" alt="" class="pizzas">
+                        <h5 class="ph">PepSlice</h5>
+                    </div>  
+                </div>
+              </div>
             </div>
-            <div class="cheese">
-                <img src="./images/cheese.png" alt="" class="pizzas">
-                <h5>Cheese</h5>
-            </div> 
-            <div class="mushroom">
-                <img src="./images/mushroom.png" alt="" class="pizzas">
-                <h5>Mushroom</h5>
-            </div>  
+            <a class="carousel-control-prev" href="#carControl" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carControl" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
         </div>
 
         <footer class="contact" id="contactus">

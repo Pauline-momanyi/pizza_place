@@ -54,10 +54,6 @@ body{
     width: 200px;
     border-radius: 80%;
 }
-/* .tagline{
-    font-family: 'Great Vibes', cursive;
-    font-size: large;
-} */
 .lists{
     display: flex;
     justify-content: center;
@@ -67,14 +63,17 @@ body{
     background: none;
 }
 .order{
+    width: 60vw;
     margin-top: 10px;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .pizzas{
-    width: 15vw;
-    margin-right: 3rem;
+    width: 12vw;
+    /* margin: auto; */
 }
+
 .navlink{
     /* text-decoration: none; */
     color: white;
@@ -84,13 +83,15 @@ body{
 }
 .order-online{
     padding: 5px;
-    background-color: rgb(96, 97, 26);
+    /* background-color: rgb(96, 97, 26); */
+    background-color: rgba(154, 205, 50, 0.4) ;
     border: 2px solid white;
     border-radius: 30%;
 }
 #orderonline{
     text-decoration: underline!important;
-    color: rgb(189, 192, 24);
+    /* color: rgb(189, 192, 24); */
+    color: rgba(154, 205, 50, 0.8) ;
 }
 .selection{
     width: 70vw;
@@ -100,7 +101,8 @@ body{
 }
 .btnorder{
     margin-top: 5px;
-    background: rgb(96, 97, 26) !important;
+    background: rgba(154, 205, 50, 0.5) !important;
+    /* background: rgb(96, 97, 26) !important; */
     color: white !important;
 }
 
@@ -165,9 +167,18 @@ table{
     justify-content: center;
     color: white !important;
 }
-
-.fa{
+.contdetails a{
+    color: black;
+}
+.contdetails a:hover{
+    /* color: rgb(189, 192, 24); */
     color: rgb(96, 97, 26);
+}
+.navlink:hover{
+    color: yellowgreen;
+}
+.fa{
+    color: rgb(96, 97, 26) !important;
     margin: 10px;
 }
 
@@ -189,10 +200,18 @@ table{
     .pizzamsg{
         width: 100%;
     }
+    .ph{
+        font-size: smaller;
+    }
 }
 @media only screen and (max-width: 424px){
     #size, #topping, #crust{
         font-size: smaller;
+    }
+}
+@media only screen and (max-width:374px){
+    .ph{
+        font-size: x-small;
     }
 }
 
