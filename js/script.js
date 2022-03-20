@@ -117,20 +117,27 @@ $(document).ready(function(){
         // let receive = $("input[name='delivery']:checked").val();
         $("#okay").click(function(){
             $("#totalcost").hide();
-            $("#deliv").hide();
-            $("#chosenlocation").show();
+            $(this).hide();          
+        
             let receive = $("input[name='delivery']:checked").val();
-            console.log(receive);
+            console.log(receive);                
             if (receive === "Deliver"){
                 console.log(1);
+                $("#chosenlocation").show();
                 $("#done").click(function(){
-                    var location = $("#location").val()
+                    var location = $("#location").val();
                     console.log(location);
-                $("locationdone").append("Order received! Delivery to "+ location + " costs Ksh.150. <h4>Total cost is now " + 800 + "</h4");
-                })                
-            }else if (receive === "PickUp"){
-                console.log(2);
-            }
+                    $("#deliv").hide();
+                    $("#chosenlocation").hide();
+                    $("#locationdone").append("Delivery to "+location+" costs ksh. 200. <br>Total Cost is now Ksh.800.<br> Wait time: 30 mins");
+                })
+                                
+                }else if (receive === "PickUp"){
+                    console.log(2);
+                    $("#deliv").hide();
+                    $("#totalcost").show();
+                    $("#locationdone").append("Av. wait time: 8 mins")
+                }
         })
     
     
