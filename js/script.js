@@ -133,7 +133,7 @@ $(document).ready(function(){
                     sum+=parseInt(news2[i].innerText)
                 }
                 console.log(sum);
-                $("#totalcost").append("The cost is KSh." + sum);
+                $("#totalcost").html("The cost is KSh." + sum);
     
             
     
@@ -154,14 +154,14 @@ $(document).ready(function(){
                         $("#deliv").hide();
                         $("#chosenlocation").hide();
                         var news3 = sum + 200;
-                        $("#locationdone").append("Delivery to "+location+" costs ksh. 200. <br>Total Cost is now Ksh."+news3+"<br> Wait time: 30 mins");
+                        $("#locationdone").html("Delivery to "+location+" costs ksh. 200. <br>Total Cost is now Ksh."+news3+"<br> Wait time: 30 mins");
                     })
                                     
                     }else if (receive === "PickUp"){
                         console.log(2);
                         $("#deliv").hide();
                         $("#totalcost").show();
-                        $("#locationdone").append("Av. wait time: 8 mins");
+                        $("#locationdone").html("Av. wait time: 8 mins");
                     }
             })
         })
