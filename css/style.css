@@ -162,25 +162,27 @@ div.inputs{
 
 table{
     margin-top: 20px !important;
-    width: 60% !important;
-    margin: auto;
-    justify-content: center;
+    width: 80% !important;
+    margin: auto !important;
+    /* justify-content: center; */
     color: white !important;
+    display: none;
+    text-align: center;
 }
-.contdetails a{
-    color: black;
+#checkout{
+    display: none;
+}
+.fa, .contdetails a{
+    color: rgb(96, 97, 26) !important;
+    margin: 10px;
 }
 .contdetails a:hover{
-    /* color: rgb(189, 192, 24); */
-    color: rgb(96, 97, 26);
+    color: rgb(189, 192, 24) !important;
 }
 .navlink:hover{
     color: yellowgreen;
 }
-.fa{
-    color: rgb(96, 97, 26) !important;
-    margin: 10px;
-}
+
 
 @media only screen and (max-width: 767px){
     .ourpizza{
