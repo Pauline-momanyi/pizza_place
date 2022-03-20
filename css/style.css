@@ -160,16 +160,17 @@ div.inputs{
     padding-bottom: 25px;     
 }
 
-table{
+#customerOrder{
     margin-top: 20px !important;
-    width: 80% !important;
-    margin: auto !important;
+    width: 70% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     /* justify-content: center; */
     color: white !important;
     display: none;
-    text-align: center;
+    /* text-align: center; */
 }
-#checkout, #deliv, #chosenlocation{
+#checkout, #deliv, #chosenlocation, #addanother{
     display: none;
 }
 .fa, .contdetails a{
@@ -214,6 +215,10 @@ table{
 @media only screen and (max-width:374px){
     .ph{
         font-size: x-small;
+    }
+    table{
+        width: 100%;
+        font-size: small;
     }
 }
 

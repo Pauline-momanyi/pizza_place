@@ -101,17 +101,31 @@ $(document).ready(function(){
         console.log("Crust costs " + crustPrice);
         var tot = parseInt(sizePrice)+parseInt(toppingPrice)+parseInt(crustPrice);
         console.log(tot);
-        var cusorder = "<tr><td>" + asize + ": " + sizePrice + "</td><td>" + atopping + ": " + toppingPrice + "</td><td>" + acrust + ": " + crustPrice + "</td><td>" + tot + "</td><tr>"
+        var alltotal = 0;
+        var cusorder = "<tr><td>" + asize + ": " + sizePrice + "</td><td>" + atopping + ": " + toppingPrice + "</td><td>" + acrust + ": " + crustPrice + "</td><td class='kes'>" + tot + "</td><tr>"
         $("#customerOrder tbody").append(cusorder);
-        $("#ordernow").html("Add another");
+        $("#ordernow").html("Order another");
+        // $("#addanother").show();
          
         console.log(tot);
+
+        // $("#addanother").click(function(){
+        //     var asize = $("#size").val();    
+        //     var atopping = $("#topping").val();
+        //     var acrust = $("#crust").val();
+        //     var cusorders = "<tr><td>" + asize + ": " + sizePrice + "</td><td>" + atopping + ": " + toppingPrice + "</td><td>" + acrust + ": " + crustPrice + "</td><td class='kes'>" + tot + "</td><tr>"
+        //     $("#customerOrder tbody").append(cusorders); 
+        // })
 
         $("#checkout").click(function(){
             $(this).hide();
             $("#ordernow").fadeOut(500);
             $("#deliv").fadeIn(1000);
             $("#totalcost").append("The cost is KSh." + tot);
+
+            // let you = Array.from(parseInt($(".kes")));
+            // console.log(you);
+
         })
 
         // let receive = $("input[name='delivery']:checked").val();
@@ -136,7 +150,7 @@ $(document).ready(function(){
                     console.log(2);
                     $("#deliv").hide();
                     $("#totalcost").show();
-                    $("#locationdone").append("Av. wait time: 8 mins")
+                    $("#locationdone").append("Av. wait time: 8 mins");
                 }
         })
     
