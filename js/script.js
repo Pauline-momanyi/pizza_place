@@ -10,9 +10,6 @@ $(document).ready(function(){
     }
 
     //user interface
-    // var asize = $("#size").val();    
-    // var atopping = $("#topping").val();
-    // var acrust = $("#crust").val();
     $("#ordernow").click(function(e){
         $("table").show();
         $("#checkout").show();
@@ -107,16 +104,36 @@ $(document).ready(function(){
         var cusorder = "<tr><td>" + asize + ": " + sizePrice + "</td><td>" + atopping + ": " + toppingPrice + "</td><td>" + acrust + ": " + crustPrice + "</td><td>" + tot + "</td><tr>"
         $("#customerOrder tbody").append(cusorder);
         $("#ordernow").html("Add another");
+         
+        console.log(tot);
+
+        $("#checkout").click(function(){
+            $(this).hide();
+            $("#ordernow").fadeOut(500);
+            $("#deliv").fadeIn(1000);
+            $("#totalcost").append("The cost is KSh." + tot);
+        })
+
+        // let receive = $("input[name='delivery']:checked").val();
+        $("#okay").click(function(){
+            $("#totalcost").hide();
+            $("#deliv").hide();
+            $("#chosenlocation").show();
+            let receive = $("input[name='delivery']:checked").val();
+            console.log(receive);
+            if (receive === "Deliver"){
+                console.log(1);
+                $("#done").click(function(){
+                    var location = $("#location").val()
+                    console.log(location);
+                $("locationdone").append("Order received! Delivery to "+ location + " costs Ksh.150. <h4>Total cost is now " + 800 + "</h4");
+                })                
+            }else if (receive === "PickUp"){
+                console.log(2);
+            }
+        })
     
     
     })
-
-    
-
-
-
-
-
-
 
 })
