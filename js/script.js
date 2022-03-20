@@ -58,7 +58,7 @@ $(document).ready(function(){
             }
     
             if (asize === "large"){
-                if (atopping === "peperoni"){
+                if (atopping === "pepperoni"){
                     toppingPrice = 120;
                 }else if (atopping === "cheese"){
                     toppingPrice = 140;
@@ -105,17 +105,8 @@ $(document).ready(function(){
             var cusorder = "<tr><td>" + asize + ": " + sizePrice + "</td><td>" + atopping + ": " + toppingPrice + "</td><td>" + acrust + ": " + crustPrice + "</td><td class='kes'>" + tot + "</td><tr>"
             $("#customerOrder tbody").append(cusorder);
             $("#ordernow").html("Add another");
-            // $("#addanother").show();
              
             console.log(tot);
-    
-            // $("#addanother").click(function(){
-            //     var asize = $("#size").val();    
-            //     var atopping = $("#topping").val();
-            //     var acrust = $("#crust").val();
-            //     var cusorders = "<tr><td>" + asize + ": " + sizePrice + "</td><td>" + atopping + ": " + toppingPrice + "</td><td>" + acrust + ": " + crustPrice + "</td><td class='kes'>" + tot + "</td><tr>"
-            //     $("#customerOrder tbody").append(cusorders); 
-            // })
     
             $("#checkout").click(function(){
                 $(this).hide();
