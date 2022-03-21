@@ -109,7 +109,7 @@ body{
     justify-content: space-around;
 }
 
-.btnorder, #okay{
+.btnorder, #okay, #heyorder{
     margin-top: 5px;
     background: rgba(154, 205, 50, 0.5) !important;
     color: white !important;
@@ -178,7 +178,7 @@ div.inputs{
     display: none;
 }
 
-#checkout, #deliv, #chosenlocation, #addanother{
+#checkout, #deliv, #chosenlocation, #addanother, #heyorder{
     display: none;
 }
 

@@ -12,6 +12,11 @@ $(document).ready(function(){
     
         //user interface
         $("#ordernow").click(function(e){
+
+            $('#heyorder').click(function() {
+                location.reload();
+            });
+
             $("table").show();
             $("#checkout").show();
             console.log("seen");
@@ -143,6 +148,7 @@ $(document).ready(function(){
                             $("#chosenlocation").hide();
                             var news3 = sum + 200;
                             $("#locationdone").html("Delivery to "+location+" costs ksh. 200. <br>Total Cost is now Ksh."+news3+"<br> Wait time: 30 mins");
+                            $('#heyorder').show();
                         })
                                         
                         }else if (receive === "PickUp"){
@@ -150,6 +156,7 @@ $(document).ready(function(){
                             $("#deliv").hide();
                             $("#totalcost").show();
                             $("#locationdone").html("Av. wait time: 8 mins");
+                            $('#heyorder').show();
                         }
                 })
 
