@@ -102,16 +102,21 @@ $(document).ready(function(){
             var tot = parseInt(sizePrice)+parseInt(toppingPrice)+parseInt(crustPrice);
             console.log(tot);
             var alltotal = 0;
-            var cusorder = "<tr><td>" + asize + ": " + sizePrice + "</td><td>" + atopping + ": " + toppingPrice + "</td><td>" + acrust + ": " + crustPrice + "</td><td class='kes'>" + tot + "</td><tr>"
+            var cusorder = "<tr><td>" + asize + ": " + sizePrice + "</td><td>" + atopping + ": " + toppingPrice + "</td><td>" + acrust + ": " + crustPrice + "</td><td class='kes'>" + tot + "</td><td><button class='btn btn-danger btn-sm'>DEL</button></td><tr>" //here
             $("#customerOrder tbody").append(cusorder);
             $("#ordernow").html("Add another");
              
             console.log(tot);
+            //here
+            $(".btn-sm").click(function(){
+                $(this).parent().parent().remove();
+            })
     
             $("#checkout").click(function(){
                 $(this).hide();
                 $("#ordernow").fadeOut(500);
                 $("#deliv").fadeIn(1000);
+                $(".btn-sm").hide();
                 // $("#totalcost").append("The cost is KSh." + tot);
     
                 // let you = Array.from(parseInt($(".kes")));
