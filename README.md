@@ -1,5 +1,13 @@
 # pizza_place
-This is a pizza place website that enables the customer select the size of pizza, toppings and the crust.<br> It focuses on working with constructors, prototypes, objects, properties, and methods <br>in Javascript as well as using jQuery and DOM manipulation & traversal.
+This is a pizza place website that enables the customer to select the size of pizza, toppings and the crust.<br> It focuses on working with constructors, prototypes, objects, properties, and methods <br>in Javascript as well as using jQuery and DOM manipulation & traversal.
+### Technologies Used
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>Bootstrap5</li>
+  <li>JavaScript</li>
+  <li>jQuery</li>
+ </ul>
 
 ## live site
 View the project live via Github pages' static site hosting service by clicking the link below:<br>
