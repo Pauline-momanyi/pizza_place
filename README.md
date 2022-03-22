@@ -11,7 +11,7 @@ This is a pizza place website that enables the customer to select the size of pi
 
 ## live site
 View the project live via Github pages' static site hosting service by clicking the link below:<br>
-hhttps://pauline-momanyi.github.io/pizza_place/
+https://pauline-momanyi.github.io/pizza_place/
 
 ## Project Setup
 To get the project on ones's local storage, git clone the project by pasting the text with link below on the terminal. <br>Navigate to te index.html file and open it using your favourite browser.<br>
